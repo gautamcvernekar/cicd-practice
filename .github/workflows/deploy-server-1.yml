@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: cd express-ts-1 && docker build -t gautamcvernekar/express-ts-1 .
-    - run: docker login -u $DOCKER_USERNAME p $DOCKER_PASSWORD
+    - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       env: 
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSORD: ${{ secrets.DOCKER_PASSWORD }}
