@@ -1,4 +1,4 @@
-name: deploy-service-1
+name: Buidl and publish
 
 on:
   [workflow_dispatch]
