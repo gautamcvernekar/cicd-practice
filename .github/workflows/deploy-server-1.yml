@@ -10,8 +10,8 @@ jobs:
     - name: checkout
       uses: actions/checkout@v4
     - name: build image
-      run: cd express-ts-1 && docker build -t gautamcvernekar/express-ts-1 .
+      run: cd express-ts-1 && docker build ./api/ -t gautamcvernekar/express-ts-1 .
     - name: push image to docker hub
       run:
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker login -u gautamcvernekar -p ${{ secrets.DOCKER_TOKEN }}
           docker push gautamcvernekar/express-ts-1
