@@ -19,7 +19,7 @@ jobs:
     - name: Push image to docker hub
       run:
           docker push gautamcvernekar/express-ts-1
-    - name: Login to Digital Ocean
-      uses: digitalocean/action-doctl@v3
-      with:
-        token: ${{ secrets.DIGITAL_OCEAN_TOKEN }}
+    # - name: Login to Digital Ocean
+    #   uses: digitalocean/action-doctl@v3
+    #   with:
+    #     token: ${{ secrets.DIGITAL_OCEAN_TOKEN }}
