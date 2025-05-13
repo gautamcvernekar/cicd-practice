@@ -1,13 +1,11 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: express-ts-1
 spec:
   selector:
-    matchLabels:
-      app: express-ts-1
+    app.kubernetes.io/name: express-ts-1
   ports:
-    - name: express-ts-1
-      protocol: TCP
-      port: 4000
-      targetPort: 4000
+    - protocol: TCP
+      port: 80
+      targetPort: 80
