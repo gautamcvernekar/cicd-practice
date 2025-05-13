@@ -4,9 +4,8 @@ on:
   [workflow_dispatch]
 
 jobs:
-  build:
+  publish-images:
     runs-on: ubuntu-latest
-
     steps:
     - name: checkout
       uses: actions/checkout@v4
