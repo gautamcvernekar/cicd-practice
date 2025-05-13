@@ -5,7 +5,8 @@ metadata:
 spec:
   replicas: 1
   selector:
-    app: express-ts-1
+    matchLabels:
+      app: express-ts-1
   template:
     metadata:
       labels:

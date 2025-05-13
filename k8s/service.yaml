@@ -4,7 +4,8 @@ metadata:
   name: express-ts-1
 spec:
   selector:
-    app: express-ts-1
+    matchLabels:
+      app: express-ts-1
   ports:
     - name: express-ts-1
       protocol: TCP
