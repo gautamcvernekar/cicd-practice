@@ -24,5 +24,5 @@ jobs:
       with:
         token: ${{ secrets.DIGITAL_OCEAN_TOKEN }}
     - run: doctl kubernetes cluster kubeconfig save practice-cluster
-    - run: kubectl apply -f k8s/deployment
+    - run: kubectl apply -f k8s
           
