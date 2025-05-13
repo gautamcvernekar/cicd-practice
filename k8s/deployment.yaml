@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: express-ts-1
+spec:
+  replicas: 1
+  selector:
+    app: express-ts-1
+  template:
+    metadata:
+      labels:
+        app: express-ts-1
+    spec:
+      containers:
+      - name: express-ts-1
+        image: gautamcvernekar/express-ts-1
+        ports:
+        - containerPort: 80

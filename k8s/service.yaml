@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: express-ts-1
+spec:
+  selector:
+    app: express-ts-1
+  ports:
+    - name: express-ts-1
+      protocol: TCP
+      port: 4000
+      targetPort: 4000
