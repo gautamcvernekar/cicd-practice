@@ -13,5 +13,5 @@ jobs:
       run: cd express-ts-1 && docker build -t gautamcvernekar/express-ts-1 .
     - name: push image to docker hub
       run:
-          docker login -u gautamcvernekar -p ${{ secrets.DOCKER_TOKEN }}
+          docker login --username gautamcvernekar --password ${{ secrets.DOCKER_TOKEN }}
           docker push gautamcvernekar/express-ts-1
